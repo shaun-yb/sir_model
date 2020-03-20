@@ -5,7 +5,7 @@ RSpec.describe SirModel do
 
   describe "#new" do
     it "creates a new model" do
-      model = described_class.new(
+      model = SirModel.new(
         eons: 1, 
         susceptible: 2, 
         infected: 3,
@@ -14,8 +14,6 @@ RSpec.describe SirModel do
         rate_ir: 6, 
         population: 7    
       )
-
-      binding.pry
 
       expect(model).to be_a(SirModel::Model)
     end
