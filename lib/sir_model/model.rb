@@ -1,3 +1,5 @@
+require_relative "./point"
+
 module SirModel
     class Model
         attr_reader :eons, :susceptible, :infected, :resistant, :rate_si, :rate_ir
