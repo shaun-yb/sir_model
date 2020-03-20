@@ -16,7 +16,7 @@ module SirModel
     
         def results
             @results ||= build_results
-            
+
         end
     
         def population

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sir_model (0.1.0)
+    sir_model (0.1.4)
 
 GEM
   remote: https://rubygems.org/

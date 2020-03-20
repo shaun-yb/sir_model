@@ -1,8 +1,9 @@
 require "sir_model/version"
+require "ostruct"
 
 module SirModel
   def self.new(eons:, susceptible:, infected:, resistant:, rate_si:, rate_ir:, population:)
-    Model.new(
+    model = Model.new(
       eons: eons, 
       susceptible: susceptible, 
       infected: infected,
@@ -11,6 +12,8 @@ module SirModel
       rate_ir: rate_ir, 
       population: population  
     )
+
+    OpenStruct.new(results: model.results)
   end
 
   class Error < StandardError; end

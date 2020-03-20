@@ -4,7 +4,7 @@ RSpec.describe SirModel do
   end
 
   describe "#new" do
-    it "creates a new model" do
+    it "creates a new OpenStruct" do
       model = SirModel.new(
         eons: 1, 
         susceptible: 2, 
@@ -14,8 +14,10 @@ RSpec.describe SirModel do
         rate_ir: 6, 
         population: 7    
       )
+      
 
-      expect(model).to be_a(SirModel::Model)
+      expect(model).to be_a(OpenStruct)
+      expect(model.results).to be_a(Array)
     end
   end
 end
