@@ -1,4 +1,5 @@
 require "sir_model/version"
+require "sir_model/model"
 require "ostruct"
 
 module SirModel
